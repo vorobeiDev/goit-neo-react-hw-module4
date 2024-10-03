@@ -73,7 +73,6 @@ const App = () => {
       {/*<Loader />*/}
       {images.length > 0 && currentPage < totalPage && <LoadMoreBtn onClick={loadMoreHandler} />}
       {isError && <ErrorMessage />}
-      <ErrorMessage />
       <ImageModal
         image={selectedImage}
         onClose={closeModal}
